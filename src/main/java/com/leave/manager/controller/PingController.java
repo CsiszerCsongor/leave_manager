@@ -12,4 +12,10 @@ public class PingController {
     public String ping(){
         return "Working";
     }
+
+
+    @GetMapping("/secured")
+    public String pingSecuredEndpoint(){
+        return "Secured";
+    }
 }
